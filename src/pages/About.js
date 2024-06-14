@@ -1,8 +1,10 @@
+//about page
+
 function About() {
     return (
       <>
         <main>
-          <h1>This is my about component!</h1>
+          <h1>This is my about component! Here</h1>
         </main>
       </>
     );

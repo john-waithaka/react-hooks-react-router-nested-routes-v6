@@ -1,3 +1,5 @@
+//home
+
 import { useState, useEffect } from "react";
 import UserCard from "../components/UserCard";
 import NavBar from "../components/NavBar";
@@ -10,7 +12,7 @@ function Home() {
       .then(r => r.json())
       .then(data => setUsers(data))
       .catch(error => console.error(error));
-  }, []);
+  }, []); //not to have infinite render
   
   const userList = users.map(user =>{
     return <UserCard key={user.id} user={user}/>;
